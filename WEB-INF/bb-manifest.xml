@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<manifest>
+  <!-- core extension information -->
+  <plugin>
+    <name value= "Photo Rosters"/>
+    <handle value= "PhotoRoster"/>
+    <description value= "Student and Participant Roster for Leaders and Instructors."/>
+    <version value= "3.0"/>
+    <requires>
+    	<bbversion value="9.1"/>
+    </requires>
+    <vendor>
+      <id value="octt"/>
+      <name value="OCTET"/>
+      <url value="http://www.oberlin.edu/octet/" />
+      <description value="Oberlin Center for Technologically Enhanced Teaching." />
+    </vendor>
+    <http-actions>
+      <remove value="admin/remove.jsp"/>
+    </http-actions>
+    
+
+    <!-- Tools defined by this extension -->
+    <application-defs>
+      <application handle="PhotoRoster" type="course" use-ssl="true" name="Photo Roster" can-allow-guest="false"
+       small-icon="images/Roster.png" large-icon="images/Roster.png">
+        <description lang="en_US">Application installed as part of the OCTET Student Roster Suite.</description>
+        <links>
+	<link>
+            <type value="course_tool"/>
+            <name value="Photo Roster - Confidential"/>
+            <url value="links/roster-Confidential.jsp"/>
+            <description value="A tool which displays photos of enrolled students with links to email addresses and other information for those that have access to the Control Panel." />
+            <icons>
+              <listitem value="images/Roster.png"/>
+            </icons>
+         </link>
+	 </links>
+     </application>
+	      
+      <application handle="studentroster" type="course" use-ssl="true" name="Photo Roster" can-allow-guest="false"
+       small-icon="images/Roster.png" large-icon="images/Roster.png">
+        <description lang="en_US">Application installed as part of the OCTET Student Roster Suite.</description>
+         <links>
+	 <link>
+            <type value="tool"/>
+            <name value="Student Roster"/>
+            <url value="links/roster-Public.jsp"/>
+            <description value="A tool which displays photos of enrolled students." />
+            <icons>
+              <listitem value="images/Roster.png"/>
+            </icons>
+          </link>
+          </links>
+	</application>
+
+   </application-defs>
+    
+    
+    <!-- code permissions required for proper operation -->
+    <permissions>
+      <permission type="persist" name="Content" actions="create,modify,delete"/>
+      <permission type="attribute" name="user.authinfo" actions="get"/>
+	  <permission type="attribute" name="user.personalinfo" actions="get,set" />              
+    </permissions>
+  </plugin>
+
+</manifest>
