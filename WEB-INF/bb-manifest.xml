@@ -22,7 +22,10 @@
 
 		<module-defs>
 			<module-type ext-ref="MyInfo" title="My Info" uicreatable="true">
-			
+			<jsp-dir>links</jsp-dir>
+			<jsp>
+				<view>info.jsp</view>
+			</jsp>
 			</module-type>
 			<module type="MyInfo" isadmin="false" useraddable="true" isdeletable="true" isdetachable="true" title="My Info">
 				<description format="S"></description>
