@@ -7,7 +7,7 @@
     <description value= "Displays info stored and used in Blackboard."/>
     <version value= "2.0"/>
     <requires>
-    	<bbversion value="3000.1.2-rel.52+af05c84"/>
+    	<bbversion value="3000.1.1-rel.20+6fbf7f6"/>
     </requires>
     <vendor>
       <id value="octt"/>
