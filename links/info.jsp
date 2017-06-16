@@ -58,20 +58,21 @@ String lname = "";
 %>
 <!--	<form action="http://octet1.csr.oberlin.edu/octet/Bb/Faculty/viewProfile.php" method="post" name="form" target="_self">
 -->
-	<input name="uid" type="hidden" value="<%=strUsername%>">
-	<input name="showCourses" type="hidden" value="<%=showCourses%>">
-	<input name="dept" type="hidden" value="<%=department%>">
-	<input name="title" type="hidden" value="<%=title%>">
-	<input name="phone" type="hidden" value="<%=phone%>">
-	<input name="office" type="hidden" value="<%=office%>">
-	<input name="email" type="hidden" value="<%=email%>">
-	<input name="firstname" type="hidden" value="<%=fname%>">
-	<input name="lastname" type="hidden" value="<%=lname%>">
-	<input name="currentuser" type="hidden" value="<%=thisUser.getUserName()%>">
+	<input name="uid" type="text" value="<%=strUsername%>">
+	<input name="showCourses" type="text" value="<%=showCourses%>">
+	<input name="dept" type="text" value="<%=department%>">
+	<input name="title" type="text" value="<%=title%>">
+	<input name="phone" type="text" value="<%=phone%>">
+	<input name="office" type="text" value="<%=office%>">
+	<input name="email" type="text" value="<%=email%>">
+	<input name="firstname" type="text" value="<%=fname%>">
+	<input name="lastname" type="text" value="<%=lname%>">
+	<input name="currentuser" type="text" value="<%=thisUser.getUserName()%>">
 	<% if(strUsername.equals(thisUser.getUserName()))
 	{%>
-	<input name="editbutton" type="hidden" value="1">
-	<%}%></form>
+	<input name="editbutton" type="text" value="1">
+	<%}%>
+<!--	</form> -->
 	<%	}
 	catch(KeyNotFoundException e)
 	{
