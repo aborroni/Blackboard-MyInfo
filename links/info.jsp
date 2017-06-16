@@ -77,7 +77,6 @@ if(userPortalRoleId.equals(studentPortalRole.getId()))
 %>
 	
 
-</bbUI:coursePage>
 </bbUI:docTemplate>
  </bbData:context>
  
