@@ -41,7 +41,7 @@ BbPersistenceManager bbPm = BbServiceManager.getPersistenceService().getDbPersis
  </style>
  
 <%
-public BbPerson(User user, String role) {
+
     //standard info
     if(user != null){
         this.id = user.getId().getExternalString();
@@ -58,7 +58,7 @@ public BbPerson(User user, String role) {
         this.uniqueId = user.getStudentId();
     }
 
-}
+
 
 //OCMR
 if(userPortalRoleId.equals(studentPortalRole.getId()))
