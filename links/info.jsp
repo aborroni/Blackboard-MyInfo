@@ -1,83 +1,81 @@
-<%@page import="java.util.*,
-				java.lang.Integer,
-				blackboard.base.*,
-				blackboard.data.*,
+<%@page import="blackboard.data.*,
                 blackboard.data.user.*,
-				blackboard.data.course.*,
                 blackboard.persist.*,
                 blackboard.persist.user.*,
-				blackboard.persist.course.*,
                 blackboard.platform.*,
-                blackboard.platform.persistence.*"
+                blackboard.platform.persistence.*,
+				octet.*"
         errorPage="/error.jsp"                
 %>
-
 <%@ taglib uri="/bbData" prefix="bbData"%>                
 <%@ taglib uri="/bbUI" prefix="bbUI"%>
+<body onLoad="document.form.submit()">
 <bbData:context id="ctx">
 <%
-/* This building block displays user information to the user */
-// create a persistence manager - needed for using loaders and persisters
-BbPersistenceManager bbPm = BbServiceManager.getPersistenceService().getDbPersistenceManager();
+/*
+ * This page is intended to show up in a separate tab where the current user in blackboard can click to change their profile.
+ * It is not intended to be used actively once mosto f the faculty members have set up their profiles.
+ * It is intended to be an initial entry point to profiles before the faculty directory is made available
+ * The code in this page closely mirros the code in viewProfile.
+*/
+try{
+//get the current user
+User thisUser = ctx.getUser();
+//get his user name
+String strUsername = thisUser.getUserName();
+String department = "";
+String phone = "";
+String email = "";
+String office = "";
+String title = "";
+String fname = "";
+String lname = "";
 
-%>
-
-<bbUI:docTemplate title="My Info">
-<bbUI:breadcrumbBar handle="control_panel" isContent="false">
-<!--<bbUI:breadcrumb>My Info</bbUI:breadcrumb> -->
-</bbUI:breadcrumbBar>
-
-<style type="text/css">
-<!--
-.style1 {
-	color: saddlebrown;
-	font-weight: bold;
-}
-#RoundedDiv {
-	border-radius: 60px 60px 25px 25px;
-	overflow:hidden;
-	 }
--->
- </style>
- 
-<%
-
-    //standard info
-    if(user != null){
-        this.id = user.getId().getExternalString();
-        this.given_name = user.getGivenName();
-        this.family_name = user.getFamilyName();
-        this.username = user.getUserName();
-        this.email = user.getEmailAddress();
-        this.role = role;
-
-        //bb info
-        this.department = user.getDepartment();
-        this.address = user.getStreet1() + " " + user.getStreet2() + ", " + user.getCity() + ", " + user.getState() + " " + user.getZipCode();
-        this.phone = user.getMobilePhone();
-        this.uniqueId = user.getStudentId();
-    }
-
-
-
-//OCMR
-if(userPortalRoleId.equals(studentPortalRole.getId()))
-{
-    result.append("<span class=\"fieldtitle\">OCMR: </span>");
-    String userMailbox = user.getJobTitle();
-    if(userMailbox.startsWith("OCMR"))
-        userMailbox = userMailbox.substring(4);
-    if(userMailbox.startsWith("-"))
-        userMailbox = userMailbox.substring(1);
-    if(userMailbox.isEmpty())
-        userMailbox = "None listed";
-    result.append(userMailbox);
-}
-
-%>
+	// create a persistence manager - needed for using loaders and persisters
+	BbPersistenceManager bbPm = BbServiceManager.getPersistenceService().getDbPersistenceManager();
 	
-
-</bbUI:docTemplate>
- </bbData:context>
- 
-
+	// create a database loader for users
+    UserDbLoader loader = (UserDbLoader) bbPm.getLoader( UserDbLoader.TYPE );
+	
+	// load the full user object for the current user
+    blackboard.data.user.User userBb = loader.loadByUserName(strUsername);
+	
+	//get different attributes of the current user
+	department = userBb.getDepartment();
+	phone = userBb.getBusinessPhone1();
+	email = userBb.getEmailAddress();
+	office = userBb.getCompany();
+	title = userBb.getJobTitle();
+	fname = userBb.getGivenName();
+	lname = userBb.getFamilyName();
+	
+	// show a link to the user's courses if he is not a staff member
+	int showCourses = 1;
+	if(userBb.getPortalRoleId().toExternalString().equals("_3_1")){//staff
+		showCourses = 0;
+	}
+	// create a form and pass all of the gathered information aboutthe current user to the php page
+%>
+	<form action="http://octet1.csr.oberlin.edu/octet/Bb/Faculty/viewProfile.php" method="post" name="form" target="_self">
+	<input name="uid" type="hidden" value="<%=strUsername%>">
+	<input name="showCourses" type="hidden" value="<%=showCourses%>">
+	<input name="dept" type="hidden" value="<%=department%>">
+	<input name="title" type="hidden" value="<%=title%>">
+	<input name="phone" type="hidden" value="<%=phone%>">
+	<input name="office" type="hidden" value="<%=office%>">
+	<input name="email" type="hidden" value="<%=email%>">
+	<input name="firstname" type="hidden" value="<%=fname%>">
+	<input name="lastname" type="hidden" value="<%=lname%>">
+	<input name="currentuser" type="hidden" value="<%=thisUser.getUserName()%>">
+	<% if(strUsername.equals(thisUser.getUserName()))
+	{%>
+	<input name="editbutton" type="hidden" value="1">
+	<%}%></form>
+	<%	}
+	catch(KeyNotFoundException e)
+	{
+	// key not found exception occurs when the user accout is disabled.
+	//note that a disabled account is different from an unavailable account
+	out.print("This faculty member is no longer with Oberlin college");
+	}%>
+</bbData:context>
