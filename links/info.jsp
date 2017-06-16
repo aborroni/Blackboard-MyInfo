@@ -56,7 +56,8 @@ String lname = "";
 	}
 	// create a form and pass all of the gathered information aboutthe current user to the php page
 %>
-	<form action="http://octet1.csr.oberlin.edu/octet/Bb/Faculty/viewProfile.php" method="post" name="form" target="_self">
+<!--	<form action="http://octet1.csr.oberlin.edu/octet/Bb/Faculty/viewProfile.php" method="post" name="form" target="_self">
+-->
 	<input name="uid" type="hidden" value="<%=strUsername%>">
 	<input name="showCourses" type="hidden" value="<%=showCourses%>">
 	<input name="dept" type="hidden" value="<%=department%>">
