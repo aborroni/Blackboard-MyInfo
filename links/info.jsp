@@ -74,7 +74,8 @@ if(userPortalRoleId.equals(studentPortalRole.getId()))
     result.append(userMailbox);
 }
 
-
+%>
+	
 
 </bbUI:coursePage>
 </bbUI:docTemplate>
