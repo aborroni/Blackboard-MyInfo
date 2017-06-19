@@ -36,6 +36,7 @@ try{
 User thisUser = ctx.getUser();
 //get his user name
 String strUsername = thisUser.getUserName();
+String StudentID = "";
 String Suffix ="";
 String Title1 ="";
 String Tnumb ="";
@@ -59,6 +60,7 @@ String lname = "";
 	//get different attributes of the current user
 	Title1= userBb.getTitle();
 	Suffix = userBb.getSuffix();
+	StudentID = userBb.getStudentId();
 	Tnumb = userBb.getBatchUid();
 	department = userBb.getDepartment();
 	phone = userBb.getBusinessPhone1();
@@ -70,10 +72,11 @@ String lname = "";
 
 %>
 
-	<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=Tnumb%>" width="121" 
+	<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" 
  " alt=""/>
 	<p class="Name">NAME: 	<b> <%=fname%> &nbsp; <%=lname%></p>
 		<i><%=strUsername%></i><br/>
+	Student ID : <%=StudentID%><br/>
 	T number : <%=Tnumb%><br/>
 	Personal Pronouns : <%=Title1%><br/>
 	Suffix : <%=Suffix%><br/>
