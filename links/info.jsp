@@ -4,7 +4,7 @@
                 blackboard.persist.*,
                 blackboard.persist.user.*,
                 blackboard.platform.*,
-                blackboard.platform.persistence.*,
+                blackboard.platform.persistence.*"
 				
         errorPage="/error.jsp"                
 %>
