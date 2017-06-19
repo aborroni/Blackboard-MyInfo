@@ -92,6 +92,9 @@ String lname = "";
 	Phone : <%=phone%><br/>
 	Office : <%=office%><br/>
 	Email : <%=email%><br/>
+	
+	
+      <p><a href="https://idcard.oberlin.edu/form/photo/" title="ResEd IdCard system" target="_blank">CHANGE PHOTO </a></p>
 <%	}
 	catch(KeyNotFoundException e)
 	{
