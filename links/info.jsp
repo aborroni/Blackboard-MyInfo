@@ -10,6 +10,7 @@
 %>
 <%@ taglib uri="/bbData" prefix="bbData"%>   
 <%@ taglib uri="/bbUI" prefix="bbUI"%>
+<%@ taglib uri="/bbNG" prefix="bbNG" %>
 <!--
 <bbNG:cssBlock> 
    <style type="text/css"> 
