@@ -1,14 +1,15 @@
-<%@page import="blackboard.data.*,
+<%@page import="import="java.util.*,
+		blackboard.data.*,
                 blackboard.data.user.*,
                 blackboard.persist.*,
                 blackboard.persist.user.*,
                 blackboard.platform.*,
                 blackboard.platform.persistence.*,
-				octet.*"
+				
         errorPage="/error.jsp"                
 %>
 <%@ taglib uri="/bbData" prefix="bbData"%>    
-<%@ taglib prefix="bbNG" uri="/bbNG" %>
+<%@ taglib uri="/bbNG" prefix="bbNG" %>
 
 <bbNG:cssBlock> 
    <style type="text/css"> 
