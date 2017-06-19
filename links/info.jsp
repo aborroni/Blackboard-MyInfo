@@ -70,6 +70,8 @@ String lname = "";
 
 %>
 
+	<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=Tnumb%>" width="121" 
+ " alt=""/>
 	<p class="Name">NAME: 	<b> <%=fname%> &nbsp; <%=lname%></p>
 		<i><%=strUsername%></i><br/>
 	T number : <%=Tnumb%><br/>
