@@ -8,8 +8,8 @@
 				
         errorPage="/error.jsp"                
 %>
-<%@ taglib uri="/bbData" prefix="bbData"%>    
-<%@ taglib uri="/bbNG" prefix="bbNG" %>
+<%@ taglib uri="/bbData" prefix="bbData"%>   
+<%@ taglib uri="/bbUI" prefix="bbUI"%>
 <!--
 <bbNG:cssBlock> 
    <style type="text/css"> 
