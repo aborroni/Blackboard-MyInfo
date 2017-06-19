@@ -80,5 +80,5 @@ String lname = "";
 	Phone : <%=phone%><br/>
 	Office : <%=office%><br/>
 	Email : <%=email%><br/>
-	
+<%}%>
 </bbData:context>
