@@ -10,9 +10,9 @@
 %>
 <%@ taglib uri="/bbData" prefix="bbData"%>   
 <%@ taglib uri="/bbUI" prefix="bbUI"%>
-<%@ taglib uri="/bbNG" prefix="bbNG" %>
-<!--
-<bbNG:cssBlock> 
+
+
+<bbUI:docTemplateHead> 
    <style type="text/css"> 
 	p {
 	font-weight: 800;
@@ -29,8 +29,8 @@ img {
 	}
 	</style> 
 
-</bbNG:cssBlock>
--->
+</bbUI:docTemplateHead>
+
 <bbData:context id="ctx">
 <%
 /*
