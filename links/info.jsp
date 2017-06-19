@@ -7,8 +7,7 @@
 				octet.*"
         errorPage="/error.jsp"                
 %>
-<%@ taglib uri="/bbData" prefix="bbData"%>                
-<%@ taglib uri="/bbUI" prefix="bbUI"%>
+<%@ taglib uri="/bbData" prefix="bbData"%>    
 <%@ taglib prefix="bbNG" uri="/bbNG" %>
 
 <bbNG:cssBlock> 
