@@ -9,7 +9,20 @@
 %>
 <%@ taglib uri="/bbData" prefix="bbData"%>                
 <%@ taglib uri="/bbUI" prefix="bbUI"%>
-<!--<body onLoad="document.form.submit()"> -->
+<%@ taglib prefix="bbNG" uri="/bbNG" %>
+
+<bbNG:cssBlock> 
+   <style type="text/css"> 
+	p {
+	text-decoration-color: blue;
+	text-decoration: blink;
+	font-weight: 800;
+}
+	.Name {
+		color: cadetblue; 
+	}
+	</style> 
+</bbNG:cssBlock>
 <bbData:context id="ctx">
 <%
 /*
@@ -56,10 +69,9 @@ String lname = "";
 	lname = userBb.getFamilyName();
 
 %>
-<!--	<form action="http://octet1.csr.oberlin.edu/octet/Bb/Faculty/viewProfile.php" method="post" name="form" target="_self">
--->
-	NAME: 	<b> <%=fname%>  <%=lname%><br/>
-		<%=strUsername%><br/>
+
+	<p class="Name">NAME: 	<b> <%=fname%>  <%=lname%></p>
+		<i><%=strUsername%></i><br/>
 	T number : <%=Tnumb%><br/>
 	Personal Pronouns : <%=Title1%><br/>
 	Suffix : <%=Suffix%><br/>
@@ -70,11 +82,8 @@ String lname = "";
 	Email : <%=email%><br/>
 	Get username : <input name="currentuser" type="text" value="<%=thisUser.getUserName()%>"><br/>
 	
-	<% if(strUsername.equals(thisUser.getUserName()))
-	{%>
-	<input name="editbutton" type="text" value="1">
-	<%}%>
-<!--	</form> -->
+	<% if(strUsername.equals(thisUser.getUserName()))%>
+
 	<%	}
 	catch(KeyNotFoundException e)
 	{
