@@ -80,5 +80,11 @@ String lname = "";
 	Phone : <%=phone%><br/>
 	Office : <%=office%><br/>
 	Email : <%=email%><br/>
-<%}%>
+<%	}
+	catch(KeyNotFoundException e)
+	{
+	// key not found exception occurs when the user accout is disabled.
+	//note that a disabled account is different from an unavailable account
+	out.print("This faculty member is no longer with Oberlin college");
+	}%>
 </bbData:context>
