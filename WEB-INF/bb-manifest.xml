@@ -2,7 +2,7 @@
 <manifest>
   <!-- core extension information -->
   <plugin>
-    <name value= "My Info"/>
+    <name value= "OCTET - My Info"/>
     <handle value= "MyInfo"/>
     <description value= "Displays info stored and used in Blackboard."/>
     <version value= "2.0"/>
