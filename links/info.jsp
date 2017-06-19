@@ -73,10 +73,10 @@ String lname = "";
 	lname = userBb.getFamilyName();
 
 %>
-
+<p class="Name">NAME: 	<b> <%=fname%> &nbsp; <%=lname%><br/>
+		<i><%=strUsername%></i></p>
+	
 	<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
-	<p class="Name">NAME: 	<b> <%=fname%> &nbsp; <%=lname%></p>
-		<i><%=strUsername%></i><br/>
 	Student ID : <%=StudentId%><br/>
 	T number : <%=Tnumb%><br/>
 	Personal Pronouns : <%=Title1%><br/>
