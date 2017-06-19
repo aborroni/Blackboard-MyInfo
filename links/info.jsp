@@ -1,4 +1,4 @@
-<%@page import="import="java.util.*,
+<%@page import="java.util.*,
 		blackboard.data.*,
                 blackboard.data.user.*,
                 blackboard.persist.*,
