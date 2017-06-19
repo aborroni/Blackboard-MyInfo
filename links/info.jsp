@@ -21,7 +21,10 @@
 	}
 img {
     	float: left;
-    	margin: 0 0 10px 10px;
+	margin-top: 0;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
 	}
 	</style> 
 </bbNG:cssBlock>
