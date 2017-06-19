@@ -80,15 +80,5 @@ String lname = "";
 	Phone : <%=phone%><br/>
 	Office : <%=office%><br/>
 	Email : <%=email%><br/>
-	Get username : <input name="currentuser" type="text" value="<%=thisUser.getUserName()%>"><br/>
 	
-	<% if(strUsername.equals(thisUser.getUserName()))%>
-
-	<%	}
-	catch(KeyNotFoundException e)
-	{
-	// key not found exception occurs when the user accout is disabled.
-	//note that a disabled account is different from an unavailable account
-	out.print("This faculty member is no longer with Oberlin college");
-	}%>
 </bbData:context>
