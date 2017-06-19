@@ -14,12 +14,14 @@
 <bbNG:cssBlock> 
    <style type="text/css"> 
 	p {
-	text-decoration-color: blue;
-	text-decoration: blink;
 	font-weight: 800;
-}
-	.Name {
-		color: cadetblue; 
+	}
+.Name {
+	color: cadetblue; 
+	}
+img {
+    	float: left;
+    	margin: 0 0 10px 10px;
 	}
 	</style> 
 </bbNG:cssBlock>
@@ -72,8 +74,7 @@ String lname = "";
 
 %>
 
-	<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" 
- " alt=""/>
+	<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
 	<p class="Name">NAME: 	<b> <%=fname%> &nbsp; <%=lname%></p>
 		<i><%=strUsername%></i><br/>
 	Student ID : <%=StudentId%><br/>
