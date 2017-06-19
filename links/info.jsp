@@ -46,7 +46,7 @@ String lname = "";
 	//get different attributes of the current user
 	Title1= userBb.getTitle();
 	Suffix = userBb.getSuffix();
-	//Tnumb = userBb.getBatchUid();
+	Tnumb = userBb.getBatchUid();
 	department = userBb.getDepartment();
 	phone = userBb.getBusinessPhone1();
 	email = userBb.getEmailAddress();
@@ -58,9 +58,9 @@ String lname = "";
 %>
 <!--	<form action="http://octet1.csr.oberlin.edu/octet/Bb/Faculty/viewProfile.php" method="post" name="form" target="_self">
 -->
-	NAME: 	<b> <%=fname%>  <%=lname%><br/>;
-		<%=strUsername%><br/>;
-	//T number : <%Tnumb%><br/>;
+	NAME: 	<b> <%=fname%>  <%=lname%><br/>
+		<%=strUsername%><br/>
+	T number : <%Tnumb%><br/>
 	Personal Pronouns : <%Title1%><br/>
 	Suffix : <%Suffix%><br/>
 	Department: <%=department%><br/>
