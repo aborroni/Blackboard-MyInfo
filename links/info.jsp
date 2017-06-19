@@ -60,9 +60,9 @@ String lname = "";
 -->
 	NAME: 	<b> <%=fname%>  <%=lname%><br/>
 		<%=strUsername%><br/>
-	T number : <%Tnumb%><br/>
-	Personal Pronouns : <%Title1%><br/>
-	Suffix : <%Suffix%><br/>
+	T number : <%=Tnumb%><br/>
+	Personal Pronouns : <%=Title1%><br/>
+	Suffix : <%=Suffix%><br/>
 	Department: <%=department%><br/>
 	title : <%=title%><br/>
 	Phone : <%=phone%><br/>
