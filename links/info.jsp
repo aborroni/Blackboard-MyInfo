@@ -10,7 +10,7 @@
 %>
 <%@ taglib uri="/bbData" prefix="bbData"%>    
 <%@ taglib uri="/bbNG" prefix="bbNG" %>
-
+<!--
 <bbNG:cssBlock> 
    <style type="text/css"> 
 	p {
@@ -27,7 +27,9 @@ img {
 	margin-bottom: 10px;
 	}
 	</style> 
+
 </bbNG:cssBlock>
+-->
 <bbData:context id="ctx">
 <%
 /*
