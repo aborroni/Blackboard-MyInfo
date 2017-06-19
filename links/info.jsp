@@ -70,7 +70,7 @@ String lname = "";
 
 %>
 
-	<p class="Name">NAME: 	<b> <%=fname%> /"  /" <%=lname%></p>
+	<p class="Name">NAME: 	<b> <%=fname%> &nbsp; <%=lname%></p>
 		<i><%=strUsername%></i><br/>
 	T number : <%=Tnumb%><br/>
 	Personal Pronouns : <%=Title1%><br/>
