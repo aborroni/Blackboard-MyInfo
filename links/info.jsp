@@ -60,7 +60,7 @@ String lname = "";
 -->
 	NAME: 	<b> <%=fname%>">  <%=lname%>"><br/>
 		<%=strUsername%><br/>
-	T# : <%Tnumb%><br/>;
+	T number : <%Tnumb%><br/>;
 	Personal Pronouns : <%Title1%><br/>
 	Suffix : <%Suffix%><br/>
 	Department: <%=department%><br/>
