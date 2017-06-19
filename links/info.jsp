@@ -25,6 +25,7 @@ User thisUser = ctx.getUser();
 String strUsername = thisUser.getUserName();
 String Suffix ="";
 String Title1 ="";
+String Tnumb ="";
 String department = "";
 String phone = "";
 String email = "";
