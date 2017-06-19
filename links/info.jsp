@@ -59,7 +59,7 @@ String lname = "";
 <!--	<form action="http://octet1.csr.oberlin.edu/octet/Bb/Faculty/viewProfile.php" method="post" name="form" target="_self">
 -->
 	NAME: 	<b> <%=fname%>  <%=lname%><br/>
-		<%=strUsername%><br/>
+		<%=strUsername%><br/>;
 	T number : <%Tnumb%><br/>;
 	Personal Pronouns : <%Title1%><br/>
 	Suffix : <%Suffix%><br/>
