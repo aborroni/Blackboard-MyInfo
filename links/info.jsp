@@ -33,8 +33,8 @@ dd {
 	margin-left: 0px;
 	margin-bottom: 10px;
 	border-color: darkseagreen;
-	border-radius: 10;
-	border-width: 3;
+	border-radius: 10px;
+	border-width: 3px;
 	}
 .left {
   	float: left;
@@ -54,7 +54,7 @@ dd {
 	font-size: 13px;
 	font-weight: bold;
 	left: 13px;
-	top: 148px;	
+	top: 175px;	
 }
  .group:after {
         content:"";
