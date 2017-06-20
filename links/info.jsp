@@ -69,7 +69,7 @@ dd {
         }
     }
 </style>
-<bbUI:module title="JOE"> Joe</bbUI:module>
+<bbUI:moduleAdminPage title="JOE"> Joe</bbUI:module>
 </bbUI:docTemplateHead>
 <bbData:context id="ctx">
 <%
