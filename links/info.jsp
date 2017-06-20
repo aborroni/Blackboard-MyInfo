@@ -52,8 +52,9 @@ dd {
 	color: white;
 	font-size: 13px;
 	font-weight: bold;
-	left: 13px;
-	top: 175px;	
+	left: 16px;
+	top: 180px;
+	text-shadow: 2px 1px red;
 }
  .group:after {
         content:"";
@@ -112,8 +113,8 @@ String lname = "";
 	department = userBb.getDepartment();
 	phone = userBb.getBusinessPhone1();
 	email = userBb.getEmailAddress();
-	office = userBb.getCompany();
-	title = userBb.getJobTitle();
+	position = userBb.getCompany();
+	location = userBb.getJobTitle();
 	fname = userBb.getGivenName();
 	lname = userBb.getFamilyName();
 
@@ -121,7 +122,7 @@ String lname = "";
 	
 <div class="group">
 <div>
-<p  class="Name"><%=fname%> &nbsp; <%=lname%></p>
+<p  class="Name">Me, <%=fname%> &nbsp; <%=lname%></p>
 <p><i style="font-size: x-small"><%=strUsername%></i></p>
 </div>
 
@@ -131,18 +132,19 @@ String lname = "";
  <p id="text">
 CHANGE PHOTO </p>
 </a>
+<p><i style="font-size: x-small">ObieID: <%=strUsername%></i></p>
 </div>	
 											    
 <div class="right">
 	<dl>	
-		<dt>Student ID : </dt><dd><%=StudentId%></dd>
-		<dt>T number : </dt><dd><%=Tnumb%></dd>
 		<dt>Personal Pronouns : </dt><dd><%=Title1%></dd>
+		<dt>T# : </dt><dd><%=StudentId%></dd>
+		<dt>ObieID : </dt><dd><%=Tnumb%></dd>
 		<dt>Suffix : </dt><dd><%=Suffix%></dd>
 		<dt>Department:</dt><dd> <%=department%></dd>
-		<dt>title : </dt><dd><%=title%></dd>
+		<dt>Location : </dt><dd><%=location%></dd>
 		<dt>Phone : </dt><dd><%=phone%></dd>
-		<dt>Office :</dt><dd> <%=office%></dd>
+		<dt>Position :</dt><dd> <%=position%></dd>
 		<dt>Email : </dt><dd><%=email%></dd>
 </div>
 
