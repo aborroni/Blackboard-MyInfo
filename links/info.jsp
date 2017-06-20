@@ -10,7 +10,6 @@
 %>
 <%@ taglib uri="/bbData" prefix="bbData"%>   
 <%@ taglib uri="/bbUI" prefix="bbUI"%>
-<bbUI:moduleAdminPage title="JOE"> Joe</bbUI:moduleAdminPage>
 
 <bbUI:docTemplateHead> 
 <style type="text/css"> 
