@@ -43,7 +43,7 @@ dd {
   	
     float:left;
 	padding-left:20;
-	width:300px;
+	width:220px;
 	
 }
 
