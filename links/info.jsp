@@ -13,9 +13,12 @@
 
 
 <bbUI:docTemplateHead> 
-   <style type="text/css"> 
-	p {
+<style type="text/css"> 
+dt {
 	font-weight: 600;
+	}
+dd {
+	font-weight:300;
 	}
 .Name {
 	color: cadetblue; 
@@ -122,15 +125,16 @@ CHANGE PHOTO </a></p>
  </div>	
 											    
 <div id="right">
-	Student ID : <%=StudentId%><br/>
-	T number : <%=Tnumb%><br/>
-	Personal Pronouns : <%=Title1%><br/>
-	Suffix : <%=Suffix%><br/>
-	Department: <%=department%><br/>
-	title : <%=title%><br/>
-	Phone : <%=phone%><br/>
-	Office : <%=office%><br/>
-	Email : <%=email%><br/>
+	<dl>	
+		<dt>Student ID : </dt><dd><%=StudentId%></dd>
+		<dt>T number : </dt></dd><%=Tnumb%></dd>
+		<dt>Personal Pronouns : </dt><dd><%=Title1%></dd>
+		<dt>Suffix : </dt><dd><%=Suffix%></dd>
+		<dt>Department:</dt><dd> <%=department%></dd>
+		<dt>title : </dt><dd><%=title%></dd>
+		<dt>Phone : </dt><dd><%=phone%></dd>
+		<dt>Office :</dt><dd> <%=office%></dd>
+		<dt>Email : </dt><dd><%=email%></dd>
 </div>
 
 <%	}
