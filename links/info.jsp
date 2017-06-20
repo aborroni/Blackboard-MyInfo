@@ -120,7 +120,7 @@ String lname = "";
 	
 <div class="group">
 <div>
-<p  class="Name"><%=fname%> &nbsp; <%=lname%></p>
+<p  class="Name">ObieId : <%=fname%> &nbsp; <%=lname%></p>
 
 </div>
 
@@ -128,7 +128,7 @@ String lname = "";
 <a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo in the ResEd IdCard system" target="_blank">
 <img src="https://resdev.oberlin.edu/feed/photo/blank/<%=Tnumb%>" width="121" alt="your image taken from IdCard system"/>
  <p id="text">
-CHANGE PHOTO </p>
+UPDATE PHOTO </p>
 </a>
 <p><i style="font-size: x-small"><%=strUsername%></i></p>
 </div>	
