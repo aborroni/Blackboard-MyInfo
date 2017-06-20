@@ -82,10 +82,10 @@ try{
 User thisUser = ctx.getUser();
 //get his user name
 String strUsername = thisUser.getUserName();
-String StudentId = "";
+String Tnumb = "";
 String Suffix ="";
 String Title1 ="";
-String Tnumb ="";
+String username ="";
 String department = "";
 String phone = "";
 String email = "";
