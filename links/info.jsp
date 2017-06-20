@@ -15,21 +15,27 @@
 <bbUI:docTemplateHead> 
    <style type="text/css"> 
 	p {
-	font-weight: 800;
+	font-weight: 600;
 	}
 .Name {
 	color: cadetblue; 
-	}
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-weight: 800;
+	   }
 img {
     	float: left;
 	margin-top: 0;
 	margin-right: 10px;
-	margin-left: 10px;
+	margin-left: 0px;
 	margin-bottom: 10px;
 	}
-#container {
-  width: 125px;
-  position: relative;
+.left {
+  	float: left;
+        width: 50%;
+}
+.right {
+  	float: right;
+        width: 50%;
 }
 #image {
   position: absolute;
@@ -42,8 +48,19 @@ img {
   font-size:13px;
   font-weight: bold;
   left: 12px;
-  top: 75px;
+  top: 100px;
 }
+ .group:after {
+        content:"";
+        display: table;
+        clear: both;
+    }
+ @media screen and (max-width: 250px) {
+        .left, .right {
+            float: none;
+            width: auto;
+        }
+    }
 </style>
 </bbUI:docTemplateHead>
 <bbData:context id="ctx">
@@ -95,15 +112,16 @@ String lname = "";
 
 %>
 <p  class="Name"><b> <%=fname%> &nbsp; <%=lname%><br/></p>
-<i style="font-size: small"><%=strUsername%></i></p>
-<div id="container">
+<i style="font-size: x-small"><%=strUsername%></i></p>
+div class="group">
+<div id="left">
 <a href="https://idcard.oberlin.edu/form/photo/" title="ResEd IdCard system" target="_blank">
 <img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
  <p id="text">
 CHANGE PHOTO </a></p>
  </div>	
 											    
-
+<div id="right">
 	Student ID : <%=StudentId%><br/>
 	T number : <%=Tnumb%><br/>
 	Personal Pronouns : <%=Title1%><br/>
@@ -113,9 +131,8 @@ CHANGE PHOTO </a></p>
 	Phone : <%=phone%><br/>
 	Office : <%=office%><br/>
 	Email : <%=email%><br/>
-	
-	
-      <p><a href="https://idcard.oberlin.edu/form/photo/" title="ResEd IdCard system" target="_blank">CHANGE PHOTO </a></p>
+</div>
+
 <%	}
 	catch(KeyNotFoundException e)
 	{
@@ -123,4 +140,5 @@ CHANGE PHOTO </a></p>
 	//note that a disabled account is different from an unavailable account
 	out.print("This faculty member is no longer with Oberlin college");
 	}%>
+</div>
 </bbData:context>
