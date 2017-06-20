@@ -19,6 +19,7 @@ dt {
 	}
 dd {
 	font-weight:300;
+	padding-left: 5;
 	}
 .Name {
 	color: cadetblue; 
@@ -31,6 +32,9 @@ dd {
 	margin-right: 10px;
 	margin-left: 0px;
 	margin-bottom: 10px;
+	border-color: darkseagreen;
+	border-radius: 10;
+	border-width: 3;
 	}
 .left {
   	float: left;
@@ -40,7 +44,8 @@ dd {
   	
     float:left;
 	padding-left:20;
-	background-color:darkseagreen;
+	width:300px;
+	
 }
 
 #text {
@@ -60,8 +65,7 @@ dd {
         .left, .right {
             float: none;
             width: auto;
-	    position:inherit;
-	    background-color:white;	  
+	    position:inherit;  
         }
     }
 </style>
