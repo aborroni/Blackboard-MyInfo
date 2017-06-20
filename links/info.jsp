@@ -97,15 +97,13 @@ String lname = "";
 <p  class="Name"><b> <%=fname%> &nbsp; <%=lname%><br/></p>
 <i style="font-size: small"><%=strUsername%></i></p>
 <div id="container">
-<img src="https://resdev.oberlin.edu/feed/photo/blank/T00081139" width="121" 
- " alt=""/>
- <p id="text"><br/>
-<a href="https://idcard.oberlin.edu/form/photo/" title="ResEd IdCard system" target="_blank">CHANGE PHOTO </a></p>
+<a href="https://idcard.oberlin.edu/form/photo/" title="ResEd IdCard system" target="_blank">
+<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
+ <p id="text">
+CHANGE PHOTO </a></p>
  </div>	
 											    
 
-	
-	<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
 	Student ID : <%=StudentId%><br/>
 	T number : <%=Tnumb%><br/>
 	Personal Pronouns : <%=Title1%><br/>
