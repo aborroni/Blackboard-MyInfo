@@ -118,7 +118,7 @@ String lname = "";
 	lname = userBb.getFamilyName();
 
 %>
-<bbUI:module title="<%=fname%> &nbsp; <%=lname%>">
+	<bbUI:module title="<%=fname%> &nbsp; <%=lname%>"><%=fullName%> Joe</bbUI:module>
 <div class="group">
 <div>
 <p  class="Name"><%=fname%> &nbsp; <%=lname%></p>
