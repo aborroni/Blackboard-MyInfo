@@ -69,6 +69,7 @@ dd {
         }
     }
 </style>
+<bbUI:module title="<%=fname%> &nbsp; <%=lname%>"> Joe</bbUI:module>
 </bbUI:docTemplateHead>
 <bbData:context id="ctx">
 <%
@@ -118,7 +119,7 @@ String lname = "";
 	lname = userBb.getFamilyName();
 
 %>
-	<bbUI:module title="<%=fname%> &nbsp; <%=lname%>"> Joe</bbUI:module>
+	
 <div class="group">
 <div>
 <p  class="Name"><%=fname%> &nbsp; <%=lname%></p>
