@@ -27,13 +27,11 @@ dd {
 	   }
 .left img {
 	position:relative;
-	margin-top: 0;
-	margin-right: 10px;
+	margin-top: 10;
+	margin-right: 15px;
 	margin-left: 0px;
-	margin-bottom: 10px;
-	border-color: darkseagreen;
+	margin-bottom: 8px;
 	border-radius: 10px;
-	border-width: 3px;
 	}
 .left {
   	float: left;
@@ -108,8 +106,8 @@ String lname = "";
 	//get different attributes of the current user
 	Title1= userBb.getTitle();
 	Suffix = userBb.getSuffix();
-	StudentId = userBb.getStudentId();
-	Tnumb = userBb.getBatchUid();
+	Tnumb = userBb.getStudentId();
+	username = userBb.getBatchUid();
 	department = userBb.getDepartment();
 	phone = userBb.getBusinessPhone1();
 	email = userBb.getEmailAddress();
@@ -132,14 +130,13 @@ String lname = "";
  <p id="text">
 CHANGE PHOTO </p>
 </a>
-<p><i style="font-size: x-small">ObieID: <%=strUsername%></i></p>
 </div>	
 											    
 <div class="right">
 	<dl>	
 		<dt>Personal Pronouns : </dt><dd><%=Title1%></dd>
-		<dt>T# : </dt><dd><%=StudentId%></dd>
-		<dt>ObieID : </dt><dd><%=Tnumb%></dd>
+		<dt>T# : </dt><dd><%=Tnumb%></dd>
+		<dt>ObieID : </dt><dd><%=username%></dd>
 		<dt>Suffix : </dt><dd><%=Suffix%></dd>
 		<dt>Department:</dt><dd> <%=department%></dd>
 		<dt>Location : </dt><dd><%=location%></dd>
