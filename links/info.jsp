@@ -37,8 +37,10 @@ dd {
         width: 125px;
 }
 .right {
-  	position:relative;
-    float:none;  	   
+  	
+    float:left;
+	padding-left:20;
+	background-color:darkseagreen;
 }
 
 #text {
@@ -47,7 +49,7 @@ dd {
 	font-size: 13px;
 	font-weight: bold;
 	left: 13px;
-	top: 148px;
+	top: 148px;	
 }
  .group:after {
         content:"";
@@ -59,6 +61,7 @@ dd {
             float: none;
             width: auto;
 	    position:inherit;
+	    background-color:white;	  
         }
     }
 </style>
@@ -113,10 +116,11 @@ String lname = "";
 %>
 <div class="group">
 <div>
-<p  class="Name"><b> <%=fname%> &nbsp; <%=lname%></p>
+<p  class="Name"><%=fname%> &nbsp; <%=lname%></p>
 <p><i style="font-size: x-small"><%=strUsername%></i></p>
 </div>
-<div class="left">
+
+	<div class="left">
 <a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo in the ResEd IdCard system" target="_blank">
 <img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
  <p id="text">
