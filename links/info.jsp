@@ -91,8 +91,8 @@ String Tnumb ="";
 String department = "";
 String phone = "";
 String email = "";
-String office = "";
-String title = "";
+String position = "";
+String location = "";
 String fname = "";
 String lname = "";
 
