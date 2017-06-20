@@ -120,7 +120,7 @@ String lname = "";
 	
 <div class="group">
 <div>
-<p  class="Name">ObieId : <%=fname%> &nbsp; <%=lname%></p>
+<p  class="Name"><%=fname%> &nbsp; <%=lname%></p>
 
 </div>
 
@@ -130,7 +130,7 @@ String lname = "";
  <p id="text">
 UPDATE PHOTO </p>
 </a>
-<p><i style="font-size: x-small"><%=strUsername%></i></p>
+<p><i style="font-size: x-small">ObieId : <%=strUsername%></i></p>
 </div>	
 											    
 <div class="right">
