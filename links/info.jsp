@@ -130,7 +130,7 @@ String lname = "";
  <p id="text">
 UPDATE PHOTO </p>
 </a>
-<p><i style="font-size: x-small">ObieId : <%=strUsername%></i></p>
+
 </div>	
 											    
 <div class="right">
