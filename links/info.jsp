@@ -19,7 +19,7 @@ dt {
 	}
 dd {
 	font-weight:300;
-	padding-left: 5;
+	padding-left: 5px;
 	}
 .Name {
 	color: cadetblue; 
