@@ -58,7 +58,7 @@ img {
         display: table;
         clear: both;
     }
- @media screen and (max-width: 250px) {
+ @media screen and (max-width: 300px) {
         .left, .right {
             float: none;
             width: auto;
@@ -114,20 +114,21 @@ String lname = "";
 	lname = userBb.getFamilyName();
 
 %>
-<p  class="Name"><b> <%=fname%> &nbsp; <%=lname%><br/></p>
-<i style="font-size: x-small"><%=strUsername%></i></p>
 <div class="group">
 <div id="left">
-<a href="https://idcard.oberlin.edu/form/photo/" title="ResEd IdCard system" target="_blank">
+<p  class="Name"><b> <%=fname%> &nbsp; <%=lname%><br/></p>
+<i style="font-size: x-small"><%=strUsername%></i></p>
+<a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo in the ResEd IdCard system" target="_blank">
 <img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
  <p id="text">
-CHANGE PHOTO </a></p>
+CHANGE PHOTO </p>
+</a>
  </div>	
 											    
 <div id="right">
 	<dl>	
 		<dt>Student ID : </dt><dd><%=StudentId%></dd>
-		<dt>T number : </dt></dd><%=Tnumb%></dd>
+		<dt>T number : </dt><dd><%=Tnumb%></dd>
 		<dt>Personal Pronouns : </dt><dd><%=Title1%></dd>
 		<dt>Suffix : </dt><dd><%=Suffix%></dd>
 		<dt>Department:</dt><dd> <%=department%></dd>
