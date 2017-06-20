@@ -26,7 +26,7 @@ dd {
 	font-weight: 800;
 	   }
 .left img {
-    	position:absolute;
+	position:relative;
 	margin-top: 0;
 	margin-right: 10px;
 	margin-left: 0px;
@@ -34,34 +34,31 @@ dd {
 	}
 .left {
   	float: left;
-        width: 50%;
+        width: 125px;
 }
 .right {
-  	float: right;
-        width: 50%;
+  	position:relative;
+    float:none;  	   
 }
-#image {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+
 #text {
-  position: absolute;
-  color: white;
-  font-size:13px;
-  font-weight: bold;
-  left: 12px;
-  top: 150px;
+	position: absolute;
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	left: 13px;
+	top: 148px;
 }
  .group:after {
         content:"";
         display: table;
         clear: both;
     }
- @media screen and (max-width: 300px) {
+ @media screen and (max-width: 380px) {
         .left, .right {
             float: none;
             width: auto;
+	    position:inherit;
         }
     }
 </style>
@@ -115,15 +112,17 @@ String lname = "";
 
 %>
 <div class="group">
-<div class="left">
+<div>
 <p  class="Name"><b> <%=fname%> &nbsp; <%=lname%></p>
 <p><i style="font-size: x-small"><%=strUsername%></i></p>
+</div>
+<div class="left">
 <a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo in the ResEd IdCard system" target="_blank">
 <img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
  <p id="text">
 CHANGE PHOTO </p>
 </a>
- </div>	
+</div>	
 											    
 <div class="right">
 	<dl>	
