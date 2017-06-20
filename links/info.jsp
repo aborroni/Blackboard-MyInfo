@@ -24,6 +24,8 @@ dd {
 	color: cadetblue; 
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	font-weight: 800;
+	font-size:larger;
+	text-indent:5px;
 	   }
 .left img {
 	position:relative;
@@ -51,7 +53,7 @@ dd {
 	font-size: 13px;
 	font-weight: bold;
 	left: 16px;
-	top: 180px;
+	top: 175px;
 	text-shadow: 2px 1px darkseagreen;
 }
  .group:after {
