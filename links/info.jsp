@@ -113,7 +113,7 @@ String lname = "";
 %>
 <p  class="Name"><b> <%=fname%> &nbsp; <%=lname%><br/></p>
 <i style="font-size: x-small"><%=strUsername%></i></p>
-div class="group">
+<div class="group">
 <div id="left">
 <a href="https://idcard.oberlin.edu/form/photo/" title="ResEd IdCard system" target="_blank">
 <img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
