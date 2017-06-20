@@ -27,10 +27,25 @@ img {
 	margin-left: 10px;
 	margin-bottom: 10px;
 	}
-	</style> 
-
+#container {
+  width: 125px;
+  position: relative;
+}
+#image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#text {
+  position: absolute;
+  color: white;
+  font-size:13px;
+  font-weight: bold;
+  left: 12px;
+  top: 75px;
+}
+</style>
 </bbUI:docTemplateHead>
-
 <bbData:context id="ctx">
 <%
 /*
@@ -79,8 +94,16 @@ String lname = "";
 	lname = userBb.getFamilyName();
 
 %>
-<p class="Name">NAME: 	<b> <%=fname%> &nbsp; <%=lname%><br/>
-		<i><%=strUsername%></i></p>
+<p  class="Name"><b> <%=fname%> &nbsp; <%=lname%><br/></p>
+<i style="font-size: small"><%=strUsername%></i></p>
+<div id="container">
+<img src="https://resdev.oberlin.edu/feed/photo/blank/T00081139" width="121" 
+ " alt=""/>
+ <p id="text"><br/>
+<a href="https://idcard.oberlin.edu/form/photo/" title="ResEd IdCard system" target="_blank">CHANGE PHOTO </a></p>
+ </div>	
+											    
+
 	
 	<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
 	Student ID : <%=StudentId%><br/>
