@@ -28,7 +28,7 @@ dd {
 .left img {
 	position:relative;
 	margin-top: 10;
-	margin-right: 15px;
+	margin-right: 20px;
 	margin-left: 0px;
 	margin-bottom: 8px;
 	border-radius: 10px;
@@ -40,7 +40,7 @@ dd {
 .right {
   	
     float:left;
-	padding-left:20;
+	padding-left:25;
 	width:220px;
 	
 }
@@ -52,7 +52,7 @@ dd {
 	font-weight: bold;
 	left: 16px;
 	top: 180px;
-	text-shadow: 2px 1px red;
+	text-shadow: 2px 1px darkseagreen;
 }
  .group:after {
         content:"";
