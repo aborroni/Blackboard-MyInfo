@@ -25,8 +25,8 @@ dd {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	font-weight: 800;
 	   }
-img {
-    	float: left;
+.left img {
+    	position:absolute;
 	margin-top: 0;
 	margin-right: 10px;
 	margin-left: 0px;
@@ -51,7 +51,7 @@ img {
   font-size:13px;
   font-weight: bold;
   left: 12px;
-  top: 100px;
+  top: 150px;
 }
  .group:after {
         content:"";
@@ -117,7 +117,7 @@ String lname = "";
 <div class="group">
 <div class="left">
 <p  class="Name"><b> <%=fname%> &nbsp; <%=lname%></p>
-<i style="font-size: x-small"><%=strUsername%></i>
+<p><i style="font-size: x-small"><%=strUsername%></i></p>
 <a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo in the ResEd IdCard system" target="_blank">
 <img src="https://resdev.oberlin.edu/feed/photo/blank/<%=StudentId%>" width="121" alt="your image taken from IdCard system"/>
  <p id="text">
