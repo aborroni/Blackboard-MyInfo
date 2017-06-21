@@ -156,4 +156,5 @@ UPDATE PHOTO </p>
 	out.print("This faculty member is no longer with Oberlin college");
 	}%>
 </div>
+<span> <a href="https://blackboard.oberlin.edu/webapps/blackboard/execute/editUser?context=self_modify">Update Info</a></span>
 </bbData:context>
