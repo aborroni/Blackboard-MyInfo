@@ -20,7 +20,7 @@
     </http-actions>
    
 		<module-defs>
-			<module-type ext-ref="MyInfo" title="My Info" uicreatable="true">
+			<module-type ext-ref="MyInfo" title="Your Information" uicreatable="true">
 			<jsp-dir>links</jsp-dir>
 			<jsp>
 				<view>info.jsp</view>
