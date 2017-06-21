@@ -20,13 +20,13 @@
     </http-actions>
    
 		<module-defs>
-			<module-type ext-ref="MyInfo" title="Your Information" uicreatable="true">
+			<module-type ext-ref="MyInfo" title="Your Info" uicreatable="true">
 			<jsp-dir>links</jsp-dir>
 			<jsp>
 				<view>info.jsp</view>
 			</jsp>
 			</module-type>
-			<module type="MyInfo" isadmin="false" useraddable="true" isdeletable="true" isdetachable="true" title="My Info">
+			<module type="MyInfo" isadmin="false" useraddable="true" isdeletable="true" isdetachable="true" title="Your Info">
 				<description format="S"></description>
 				<ExtraInfo/>
 				<module-groups>
