@@ -137,15 +137,15 @@ UPDATE PHOTO </p>
 											    
 <div class="right">
 	<dl>	
-		<dt>Personal Pronouns : </dt><dd><%=Title1%></dd>
-		<dt>T# : </dt><dd><%=Tnumb%></dd>
+		<dt>Personal Pronouns : </dt><dd><%=Suffix%></dd>
 		<dt>ObieID : </dt><dd><%=username%></dd>
-		<dt>Suffix : </dt><dd><%=Suffix%></dd>
+		<dt>T# : </dt><dd><%=Tnumb%></dd>
+		<dt>Email : </dt><dd><%=email%></dd>
 		<dt>Department:</dt><dd> <%=department%></dd>
 		<dt>Location : </dt><dd><%=location%></dd>
 		<dt>Phone : </dt><dd><%=phone%></dd>
 		<dt>Position :</dt><dd> <%=position%></dd>
-		<dt>Email : </dt><dd><%=email%></dd>
+		
 </div>
 
 <%	}
