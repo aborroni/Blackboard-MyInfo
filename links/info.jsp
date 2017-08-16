@@ -128,7 +128,7 @@ String lname = "";
 
 	<div class="left">
 <a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo in the ResEd IdCard system" target="_blank">
-<img src="https://resdev.oberlin.edu/feed/photo/blank/<%=Tnumb%>" width="121" alt="your image taken from IdCard system"/>
+<img src="https://idcard.oberlin.edu/feed/photo/blank/<%=Tnumb%>" width="121" alt="your image taken from IdCard system"/>
  <p id="text">
 UPDATE PHOTO </p>
 </a>
