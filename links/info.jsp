@@ -127,11 +127,11 @@ String lname = "";
 </div>
 
 	<div class="left">
-<a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo in the ResEd IdCard system" target="_blank">
-<img src="https://idcard.oberlin.edu/feed/photo/blank/<%=Tnumb%>" width="121" alt="your image taken from IdCard system"/>
- <p id="text">
-UPDATE PHOTO </p>
-</a>
+//<a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo in the ResEd IdCard system" target="_blank">
+<img src="https://octet1.csr.oberlin.edu/octet/Bb/Photos/expo/<%=username%>/profileImage" width="121" alt="your image taken from IdCard system"/>
+// <p id="text">
+//UPDATE PHOTO </p>
+//</a>
 
 </div>	
 											    
