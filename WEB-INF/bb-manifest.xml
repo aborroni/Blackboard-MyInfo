@@ -5,7 +5,7 @@
     <name value= "OCTET Student Photo Module"/>
     <handle value= "octetphoto"/>
     <description value= "Student Photo Module Plugin."/>
-    <version value= "1.0.0.1"/>
+    <version value= "3.0.0.1"/>
     <requires>
     	<bbversion value="3000.1.1-rel.20+6fbf7f6"/>
     </requires>
@@ -21,7 +21,7 @@
 		
 		
 		<module-defs>
-			<module-type ext-ref="module" title="Display Photo" uicreatable="true">
+			<module-type ext-ref="YourInfo" title="Your photo" uicreatable="true">
 			<jsp-dir>module</jsp-dir>
 			<jsp>
 				<view>view.jsp</view>
