@@ -2,8 +2,8 @@
 <manifest>
   <!-- core extension information -->
   <plugin>
-    <name value= "OCTET - My Info"/>
-    <handle value= "MyInfo"/>
+    <name value= "OCTET - Your Info"/>
+    <handle value= "YourInfo"/>
     <description value= "Displays info stored and used in Blackboard."/>
     <version value= "2.0"/>
     <requires>
@@ -20,13 +20,13 @@
     </http-actions>
    
 		<module-defs>
-			<module-type ext-ref="MyInfo" title="Your Info" uicreatable="true">
+			<module-type ext-ref="YourInfo" title="Your Info" uicreatable="true">
 			<jsp-dir>links</jsp-dir>
 			<jsp>
 				<view>info.jsp</view>
 			</jsp>
 			</module-type>
-			<module type="MyInfo" isadmin="false" useraddable="true" isdeletable="true" isdetachable="true" title="Your Info">
+			<module type="YouInfo" isadmin="false" useraddable="true" isdeletable="true" isdetachable="true" title="Your Info">
 				<description format="S"></description>
 				<ExtraInfo/>
 				<module-groups>
