@@ -24,6 +24,7 @@
 			<module-type ext-ref="YourInfo" title="Your photo" uicreatable="true">
 			<jsp-dir>module</jsp-dir>
 			<jsp>
+				<view>info.jsp</view>
 				<view>view.jsp</view>
 				<edit>changePhoto.jsp</edit>
 			</jsp>
