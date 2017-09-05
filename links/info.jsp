@@ -127,7 +127,7 @@ String lname = "";
 </div>
 
 	<div class="left">
-//<a href="https://idcard.oberlin.edu/form/photo/" title="Change your photo" target="_blank">
+//<a href="changePhoto.jsp" title="Change your photo" target="_blank">
 <img src="https://octet1.csr.oberlin.edu/octet/Bb/Photos/expo/<%=username%>/profileImage" width="121" alt="your image"/>
 // <p id="text">
 //UPDATE PHOTO </p>
